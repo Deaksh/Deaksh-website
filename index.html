@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Widget Test</title>
+    <!-- Widget JavaScript bundle -->
+    <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_GB"></script>
+</head>
+<body>
+    <!-- Search widget element -->
+    <gen-search-widget
+      configId="d385a1ed-6b0e-4e47-b573-d968a1662d02"
+      triggerId="searchWidgetTrigger">
+    </gen-search-widget>
+
+    <!-- Element that opens the widget on click -->
+    <input placeholder="Search here" id="searchWidgetTrigger" />
+
+    <!-- Example script to set authorization token (Assuming you had one) -->
+    <script>
+        // In a real scenario, you would get the token from your backend
+        var authorizationToken = "<Your JWT or OAuth token here>";
+
+        // Set the authorization token (only applicable if you have one)
+        // Example: genSearchWidget.setAuthorizationToken(authorizationToken);
+    </script>
+</body>
+</html>
+
